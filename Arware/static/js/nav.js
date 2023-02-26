@@ -3,6 +3,13 @@ window.addEventListener('scroll', function(){
     var hero = document.getElementById('hero');
     header.classList.toggle('scroll',window.scrollY>0);
     hero.classList.toggle('scroll',window.scrollY>0);
-    console.log(Window.scroll());
 })
 
+// window.addEventListener('click', function(){
+//     var section = document.getElementById('serv');
+//     var titulo = document.getElementById('titulo');
+//     var img = document.getElementById('img');
+//     section.classList.toggle('open');
+//     titulo.classList.toggle('open');
+//     img.classList.toggle('open');
+// })

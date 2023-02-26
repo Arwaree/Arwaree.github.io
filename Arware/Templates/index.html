@@ -53,7 +53,8 @@
             <div>
                 <h1>Tu Mejor Solución, Siempre</h1>
                 <h2>Mas que un grupo desarrolladores, somos la conexión con el mundo digital</h2>
-                <span class="comunicate">Realiza lo que imaginas, solo contactándonos <a class="boton-Pro" href="http://">Enviar Propuesta</a></span>
+                <span class="comunicate">Realiza lo que imaginas, solo contactándonos <a class="boton-Pro"
+                        href="http://">Enviar Propuesta</a></span>
             </div>
             <div>
                 <img src="{% static 'imgs/hero-img.png' %}" alt="imagen Hero">
@@ -78,14 +79,14 @@
                 <div>
                     <h1>Nuestros Servicios</h1>
                 </div>
-                <div>
+                <div class="contenedor-servicios">
                     <!-- aplicaciones Móviles -->
-                    <article>
-                        <div>
-                            <img src="{% static 'imgs/app-movil.png' %}" alt="" srcset="">
+                    <article class="servicios" id="serv">
+                        <div class="cont-img-serv">
+                            <img src="{% static 'imgs/app-movil.png' %}" alt="" class="serv-img" id="img">
                         </div>
-                        <div>
-                            <h1>Aplicaciones Móviles</h1>
+                        <div class="cont-text-serv">
+                            <h1 class="ses" id="titulo">Aplicaciones Móviles</h1>
                             <p>Una aplicación Movil es un software diseñado para ejecutarse en los smartphones
                                 (teléfonos inteligentes), tabletas y otros dispositivos móviles.
                                 Estas dependen bastante del rubro o negocio por ejemplo para los hoteles lo recomendable
@@ -95,12 +96,12 @@
                     <!-- aplicaciones Móviles -->
 
                     <!-- Paginas web -->
-                    <article>
-                        <div>
-                            <!-- <img src="{% static 'imgs/paginaweb.png' %}" alt="" srcset=""> -->
+                    <article class="servicios-revers" id="serv">
+                        <div class="cont-img-serv">
+                            <img src="{% static 'imgs/paginaweb.png' %}" alt="" class="serv-img-rev" id="img">
                         </div>
-                        <div>
-                            <h1>Paginas Web</h1>
+                        <div class="cont-text-serv">
+                            <h1 class="ses-rev" id="titulo">Paginas Web</h1>
                             <p>Existen dos tipos de Paginas Webs Estáticas y Dinámicas, estas Páginas le podrían llegar
                                 a ser util en su Local para poder ganar posicionamiento en internet.
                                 las principales diferencias son que en las páginas web estáticas no se utilizan bases de
@@ -114,12 +115,12 @@
                     <!-- Paginas web -->
 
                     <!-- Aplicaciones Web -->
-                    <article>
-                        <div>
-                            <img src="{% static 'imgs/aplicaciones-web.png' %}" alt="" srcset="">
+                    <article class="servicios" id="serv">
+                        <div class="cont-img-serv">
+                            <img src="{% static 'imgs/aplicaciones-web.png' %}" alt="" class="serv-img" id="img">
                         </div>
-                        <div>
-                            <h1>Aplicaciones Web</h1>
+                        <div class="cont-text-serv">
+                            <h1 class="ses" id="titulo">Aplicaciones Web</h1>
                             <p>Los sistema son herramientas que creamos
                                 para que le pueda ser de utilidad en su local.
                                 Algunos de esos sistemas son Stock, Venta, Control de cámaras y Control de fugas.
@@ -285,6 +286,7 @@
     </footer>
     <!--end footer -->
     <script src="{% static 'js/nav.js' %}"></script>
+    <script src="{% static 'js/drawer.js' %}"></script>
 </body>
 
 </html>
