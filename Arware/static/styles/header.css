@@ -4,8 +4,13 @@
     margin: 0;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: #fff;
+
 }
 
 /* estilos del header */
@@ -18,12 +23,12 @@ body{
     position: fixed;
 }
 
-.header.scroll{
+.header.scroll {
     background-color: #fff;
     padding: 10px 0;
     z-index: 1;
     color: #fff;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0,.4);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .4);
 }
 
 .cont-img-titulo {
@@ -114,7 +119,7 @@ body{
         font-size: 30px;
     }
 
-    .header{
+    .header {
         margin-left: 0;
         font-size: 30px;
         height: 20px;
@@ -122,10 +127,10 @@ body{
         z-index: 1;
         position: fixed;
         box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
-        
+
     }
 
-    .header.scroll{
+    .header.scroll {
         margin-left: 0;
         font-size: 30px;
         height: 95px;

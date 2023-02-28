@@ -30,11 +30,10 @@
             <!-- links con palabras -->
             <div class="links-palabras">
                 <ul>
-                    <li><a href="http://">Nuestros Servicios</a></li>
-                    <li><a href="http://">Digitalizate</a></li>
-                    <li><a href="http://">Sobre Nosotros</a></li>
-                    <li><a href="http://">Nuestro Equipo</a></li>
-                    <li><a href="http://">Contáctenos</a></li>
+                    <li><a href="#servicios">Nuestros Servicios</a></li>
+                    <li><a href="#digitalizar">Digitalizate</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contáctenos</a></li>
                 </ul>
             </div>
             <!-- links con palabras -->
@@ -42,11 +41,10 @@
             <!-- links con iconos -->
             <div class="links-iconos">
                 <ul>
-                    <li><a href="#"><i class="ri-store-3-fill"></i></a></li>
-                    <li><a href="#"><i class="ri-global-line"></i></a></li>
-                    <li><a href="#"><i class="ri-group-2-fill"></i></a></li>
-                    <li><a href="#"><i class="ri-service-fill"></i></a></li>
-                    <li><a href="#"><i class="ri-phone-fill"></i></a></li>
+                    <li><a href="#servicios"><i class="ri-store-3-fill"></i></a></li>
+                    <li><a href="#digitalizar"><i class="ri-global-line"></i></a></li>
+                    <li><a href="#about"><i class="ri-group-2-fill"></i></a></li>
+                    <li><a href="#contacto"><i class="ri-phone-fill"></i></a></li>
                 </ul>
             </div>
             <!-- links con iconos -->
@@ -61,7 +59,7 @@
                 <h1>Tu Mejor Solución, Siempre</h1>
                 <h2>Mas que un grupo desarrolladores, somos la conexión con el mundo digital</h2>
                 <span class="comunicate">Realiza lo que imaginas, solo contactándonos <a class="boton-Pro"
-                        href="http://">Enviar Propuesta</a></span>
+                        href="#contacto">Enviar Propuesta</a></span>
             </div>
             <div>
                 <img src="{% static 'imgs/hero-img.png' %}" alt="imagen Hero">
@@ -81,7 +79,7 @@
     <main>
 
         <!-- Nuestros Servicios -->
-        <section class="cont-serv-padre">
+        <section class="cont-serv-padre" id="servicios">
             <div>
                 <div>
                     <h1 class="titulo-serv">NUESTROS SERVICIOS</h1>
@@ -148,7 +146,7 @@
         <!-- Nuestros Servicios -->
 
         <!-- Digitalizar tu Negocio -->
-        <section class="cont-dig-padre">
+        <section class="cont-dig-padre" id="digitalizar">
             <article class="digitalizar">
                 <div class="titulo-dig">
                     <h1>Digitaliza tu Negocio</h1>
@@ -164,7 +162,7 @@
         <!-- Digitalizar tu Negocio -->
 
         <!-- Sobre Nosotros -->
-        <section class="about">
+        <section class="about" id="about">
             <h1>Sobre Nosotros</h1>
             <p>
                 Somos dos Programadores que se conformaron con las ganas de brindar un servicio de calidad a
@@ -181,43 +179,43 @@
             <div class="contenedor-carta">
                 <!-- primer carta -->
                 <div class="carta">
-                    <span class="nombre">Salinas Esteban</span>
-                    <span class="titulo-tec">Técnico Programador</span>
                     <img src="{% static 'Us/foto.jpg' %}" alt="">
-                    <ul>
-                        <li class=""><a href="https://www.facebook.com/esteban.salinas.3344"
-                                target="_blank"><span><i class="ri-facebook-circle-fill"></i></span></a></li>
-                        <li class=""><a href="https://www.instagram.com/estebansalinass_/"
-                                target="_blank"><span><i class="ri-instagram-line"></i></span></a></li>
-                        <li class=""><a href="https://github.com/Esteban-45" target="_blank"><span></span><i
+                    <span class="nombre" id="carta">Esteban Benjamín Salinas</span>
+                    <span class="titulo-tec" id="carta">Técnico Programador</span>
+                    <ul id="carta">
+                        <li class="instagram"><a href="https://www.instagram.com/estebansalinass_/" target="_blank"><i
+                                    class="ri-instagram-line"></i></a></li>
+                        <li class="github"><a href="https://github.com/Esteban-45" target="_blank"><i
                                     class="ri-github-fill"></i></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/esteban-salinas-258b09221/" target="_blank"><i
+                                    class="ri-linkedin-fill"></i></a></li>
                     </ul>
-                    <p>Sostiene que si te lo propones lo podes lograr.</p>
+                    <p id="carta">Sostiene que si te lo propones lo podes lograr.</p>
                 </div>
                 <!-- primer carta -->
 
                 <!-- segunda carta -->
-                <!-- <div class="carta">
-                    <span>Schneider Oscar</span>
-                    <span>Técnico Programador</span>
+                <div class="carta">
                     <img src="{% static 'Us/oscar.jpg' %}" alt="">
-                    <ul>
-                        <li class="agrandar"><a href="https://www.facebook.com/oscra.schneider" target="_blank"><span><i
-                                        class="ri-facebook-circle-fill"></i></span></a></li>
-                        <li class="agrandar"><a href="https://www.instagram.com/schbeideroscar/"
-                                target="_blank"><span><i class="ri-instagram-line"></i></span></a></li>
-                        <li class="agrandar"><a href="https://github.com/Oscar2sas" target="_blank"><span></span><i
-                                    class="ri-github-fill"></i></a></li>
+                    <span class="nombre" id="carta">Oscar Alejandro Schneider</span>
+                    <span class="titulo-tec" id="carta">Técnico Programador</span>
+                    <ul id="carta">
+                        <li class="instagram"><a href="https://www.instagram.com/schneider_ag3/" target="_blank"><i
+                                    class="ri-instagram-line"></i></a></li>
+                        <li class="github"><a href="https://github.com/Oscar2sas" target="_blank"><i class="ri-github-fill"></i></a>
+                        </li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/schneider-oscar-a0a9bb267/" target="_blank"><i
+                                    class="ri-linkedin-fill"></i></a></li>
                     </ul>
-                    <p>Afirma la imaginación es una gran herramienta a la hora de crear.</p>
-                </div> -->
+                    <p id="carta">ses</p>
+                </div>
                 <!-- segunda carta -->
             </div>
         </section>
         <!-- Nuestro Equipo -->
 
         <!-- Contáctenos -->
-        <section class="contenedor-contacto">
+        <section class="contenedor-contacto" id="contacto">
             <article class="cont-form">
                 <div class="maps">
                     <h1><i class="ri-map-pin-2-fill"></i> Las Heras, Santa Cruz</h1>

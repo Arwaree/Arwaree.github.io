@@ -17,3 +17,13 @@
     padding: 10px 0;
     font-size: 18px;
 }
+
+@media screen and (max-width: 980px) {
+    .about h1{
+        font-size: 20px;
+    }
+
+    .about p{
+        font-size: 14px;
+    }
+}

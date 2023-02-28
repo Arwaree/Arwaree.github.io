@@ -108,3 +108,17 @@ form label{
     background-color: #639cff;
 
 }
+
+@media screen and (max-width: 980px){
+    .cont-form{
+        flex-direction: column;
+    }    
+
+    .maps{
+        width: 90% ;
+    }
+
+    .form{
+        width: 85%;
+    }
+}
