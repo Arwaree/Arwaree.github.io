@@ -1,0 +1,43 @@
+.contenedor-carta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.carta img{
+    width: 350px;
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
+    padding: 10px;
+}
+
+.carta ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.carta ul li{
+    font-size: 40px;
+}
+
+.carta ul li a{
+    text-decoration: none;
+}
+
+.carta .nombre{
+    font-size: 18px;
+}
+
+.carta .titulo-tec{
+    font-size: 14px;
+}

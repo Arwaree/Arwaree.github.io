@@ -1,0 +1,214 @@
+/* estilos de los Servicios */
+.cont-serv-padre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+.titulo-serv{
+    font-size: 40px;
+    text-shadow: 0 0 15px -1px rgba(0,0,0,0.4);
+}
+.contenedor-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-img-serv{
+    background-color: #2f2f2f;
+    padding: 10px;
+}
+
+.serv-img.open{
+    width: 250px;
+}
+.serv-img{
+    width: 90px;
+    transition: .3s all;
+}
+/* para la imagen de reversa */
+.serv-img-rev.open{
+    width: 250px;
+}
+.serv-img-rev{
+    width: 90px;
+    transition: .3s all;
+}
+/* para la imagen de reversa */
+.cont-text-serv{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.cont-text-serv p{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+h1.ses{
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 35px;
+    transition: .3s all;
+    margin-top: 20px;
+}
+
+h1.ses.open{
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+h1.ses::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 4px;
+    background-color: #e0e0e0;
+    z-index: 0;
+    bottom: 0;
+    border-radius: 30px;
+}
+
+h1.ses::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 4px;
+    background-color: #3472df;
+    z-index: 0;
+    bottom: 0;
+    border-radius: 30px;
+    transition: .3s all;
+}
+
+h1.ses.open::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 4px;
+    background-color: #3472df;
+    z-index: 0;
+    bottom: 0;
+    border-radius: 30px;
+}
+
+/* titulo en reversa  */
+h1.ses-rev{
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 35px;
+    transition: .3s all;
+    margin-top: 20px;
+}
+
+h1.ses-rev.open{
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+h1.ses-rev::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 4px;
+    background-color: #e0e0e0;
+    z-index: 0;
+    bottom: 0;
+    border-radius: 30px;
+}
+
+h1.ses-rev::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 4px;
+    background-color: #3472df;
+    z-index: 0;
+    bottom: 0;
+    border-radius: 30px;
+    transition: .3s all;
+}
+
+h1.ses-rev.open::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 4px;
+    background-color: #3472df;
+    z-index: 0;
+    bottom: 0;
+    border-radius: 30px;
+}
+
+/* titulos en reversa */
+
+.servicios{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100px;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #fff;
+    transition: .3s all;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
+}
+
+.servicios-revers{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    height: 100px;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #fff;
+    transition: .3s all;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
+}
+
+.servicios-revers.open{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    height: 273px ;
+    justify-content: center;
+    background-color: #fff;
+    transition: .3s all;
+}
+.servicios.open{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 273px ;
+    justify-content: center;
+    background-color: #fff;
+    transition: .3s all;
+}
+
+
+/* estilos de los Servicios */
