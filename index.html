@@ -232,11 +232,14 @@
                             <img src="static/imgs/mail.png" alt="imagen fachera">
                         </div>
                     </div>
-                    <form action="mail.php" method="post">
-                        <p><label for="">Nombre</label> <input type="text" name="name"></p>
-                        <p><label for="">Su mail/ correo</label> <input type="mail" name="mail"></p>
-                        <p><label for="">Asunto</label> <input type="text" name="subject"></p>
-                        <p><label for="">Mensaje:</label><textarea name="message" ></textarea></p>
+                    <form action="https://formsubmit.co/arwareempresa@gmail.com" method="post">
+                        <p><label for="">Nombre</label> <input type="text" name="name" required></p>
+                        <p><label for="">Su mail/ correo</label> <input type="email" name="mail" required></p>
+                        <p><label for="">Asunto</label> <input type="text" name="subject" required></p>
+                        <p><label for="">Mensaje:</label><textarea name="message" required></textarea></p>
+
+                        <input type="hidden" name="_next" value="https://arwaree.github.io/">
+                        <input type="hidden" name="_captcha" value="false">
                         <input type="submit" value="Enviar">
                     </form>
                 </div>
