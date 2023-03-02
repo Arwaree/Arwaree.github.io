@@ -20,7 +20,6 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     transition: .2s all;
-    position: fixed;
 }
 
 .header.scroll {
@@ -122,19 +121,15 @@ body {
     .header {
         margin-left: 0;
         font-size: 30px;
-        height: 20px;
-        overflow: hidden;
-        z-index: 1;
-        position: fixed;
-        box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
+        height: 95px;
 
     }
 
-    .header.scroll {
+    /* .header.scroll {
         margin-left: 0;
         font-size: 30px;
         height: 95px;
-    }
+    } */
 
     .contenedor-header {
         display: flex;

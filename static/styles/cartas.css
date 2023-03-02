@@ -112,13 +112,13 @@
 
 }
 
-.github a{
+.github a {
     transition: all .4s;
     border-radius: 30px;
     padding: 5px 5px;
 }
 
-.linkedin a{
+.linkedin a {
     transition: all .4s;
     border-radius: 30px;
     padding: 5px 5px;
@@ -135,19 +135,42 @@
 }
 
 @media screen and (max-width: 980px) {
-    .contenedor-carta{
+    .contenedor-carta {
         flex-direction: column;
     }
 
-    .carta{
+    .carta {
         width: 80%;
     }
 
-    .carta p{
+    .carta p {
         font-size: 12px;
     }
 
-    .carta ul li{
-        font-size: 20px;
+    .carta ul li {
+        font-size: 30px;
     }
+
+    .instagram a {
+        color: #fff;
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    }
+
+    .github a {
+        background-color: #1d1d1d;
+        color: #fff;
+    }
+
+    .linkedin a {
+        background-color: #0a66c2;
+        color: #fff;
+    }
+
+    .carta ul li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
 }

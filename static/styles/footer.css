@@ -62,10 +62,6 @@
     transition: 0.5s;
 }
 
-.footer li:hover{
-    transform: scale(1.2);
-}
-
 .footer-botom{
     width: 100%;
     height: auto;
