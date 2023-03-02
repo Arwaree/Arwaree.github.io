@@ -232,11 +232,11 @@
                             <img src="static/imgs/mail.png" alt="imagen fachera">
                         </div>
                     </div>
-                    <form action="" method="post">
-                        <p><label for="">Nombre</label> <input type="text"></p>
-                        <p><label for="">Su mail/ correo</label> <input type="mail"></p>
-                        <p><label for="">Asunto</label> <input type="text"></p>
-                        <p><label for="">Mensaje:</label><textarea name="" ></textarea></p>
+                    <form action="mail.php" method="post">
+                        <p><label for="">Nombre</label> <input type="text" name="name"></p>
+                        <p><label for="">Su mail/ correo</label> <input type="mail" name="mail"></p>
+                        <p><label for="">Asunto</label> <input type="text" name="subject"></p>
+                        <p><label for="">Mensaje:</label><textarea name="message" ></textarea></p>
                         <input type="submit" value="Enviar">
                     </form>
                 </div>
