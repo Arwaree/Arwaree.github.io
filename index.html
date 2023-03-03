@@ -20,7 +20,7 @@
 
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="inicio">
         <nav class="contenedor-header">
             <div class="cont-img-titulo">
                 <!-- <img src="{% static 'imgs/d2210123.png' %}" alt="logo" class="logo-img"> -->
@@ -57,8 +57,9 @@
             <div>
                 <h1>Tu Mejor Solución, Siempre</h1>
                 <h2>Mas que un grupo desarrolladores, somos la conexión con el mundo digital</h2>
-                <span class="comunicate">Realiza lo que imaginas, solo contactándonos <a class="boton-Pro"
-                        href="#contacto">Enviar Propuesta</a></span>
+                <span class="comunicate">Realiza lo que imaginas, solo contactándonos:</span>
+                <a class="boton-Pro"
+                        href="#contacto">Enviar Propuesta</a>
             </div>
             <div>
                 <img src="static/imgs/hero-img.png" alt="imagen Hero">
@@ -85,12 +86,12 @@
                 </div>
                 <div class="contenedor-servicios">
                     <!-- aplicaciones Móviles -->
-                    <article class="servicios" id="serv">
+                    <article class="servicios open" id="serv">
                         <div class="cont-img-serv">
-                            <img src="static/imgs/app-movil.png" alt="" class="serv-img" id="img">
+                            <img src="static/imgs/app-movil.png" alt="" class="serv-img open" id="img">
                         </div>
                         <div class="cont-text-serv">
-                            <h1 class="ses" id="titulo">Aplicaciones Móviles</h1>
+                            <h1 class="ses open" id="titulo">Aplicaciones Móviles</h1>
                             <p>Una aplicación Movil es un software diseñado para ejecutarse en los smartphones
                                 (teléfonos inteligentes), tabletas y otros dispositivos móviles.
                                 Estas dependen bastante del rubro o negocio por ejemplo para los hoteles lo recomendable
@@ -100,12 +101,12 @@
                     <!-- aplicaciones Móviles -->
 
                     <!-- Paginas web -->
-                    <article class="servicios-revers" id="serv">
+                    <article class="servicios-revers open" id="serv">
                         <div class="cont-img-serv">
-                            <img src="static/imgs/paginaweb.png" alt="" class="serv-img-rev" id="img">
+                            <img src="static/imgs/paginaweb.png" alt="" class="serv-img-rev open" id="img">
                         </div>
                         <div class="cont-text-serv">
-                            <h1 class="ses-rev" id="titulo">Paginas Web</h1>
+                            <h1 class="ses-rev open" id="titulo">Paginas Web</h1>
                             <p>Existen dos tipos de Paginas Webs Estáticas y Dinámicas, estas Páginas le podrían llegar
                                 a ser util en su Local para poder ganar posicionamiento en internet.
                                 las principales diferencias son que en las páginas web estáticas no se utilizan bases de
@@ -119,12 +120,12 @@
                     <!-- Paginas web -->
 
                     <!-- Aplicaciones Web -->
-                    <article class="servicios" id="serv">
+                    <article class="servicios open" id="serv">
                         <div class="cont-img-serv">
-                            <img src="static/imgs/aplicaciones-web.png" alt="" class="serv-img" id="img">
+                            <img src="static/imgs/aplicaciones-web.png" alt="" class="serv-img open" id="img">
                         </div>
                         <div class="cont-text-serv">
-                            <h1 class="ses" id="titulo">Aplicaciones Web</h1>
+                            <h1 class="ses open" id="titulo">Aplicaciones Web</h1>
                             <p>Los sistema son herramientas que creamos
                                 para que le pueda ser de utilidad en su local.
                                 Algunos de esos sistemas son Stock, Venta, Control de cámaras y Control de fugas.
@@ -248,7 +249,9 @@
         <!-- Contáctenos -->
     </main>
     <!-- end Main -->
-
+    <div id="go_top_cont" style="transform: scale(0);">
+        <i class="ri-arrow-up-s-line"></i>
+      </div>
     <!-- footer -->
     <footer class="footer">
         <!-- Primera sección del footer -->
@@ -271,9 +274,8 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#sobre_nosotros">Sobre Nosotros</a></li>
-                <li><a href="#contactanos">Contáctenos</a></li>
-                <li><a href="#sobre_Arware">Sobre Arware</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contáctenos</a></li>
             </ul>
         </section>
         <!-- Segunda sección del footer -->
@@ -304,6 +306,7 @@
     <!--end footer -->
     <script src="static/js/nav.js"></script>
     <script src="static/js/drawer.js"></script>
+    <script src="static/js/boton.js"></script>
 </body>
 
 </html>

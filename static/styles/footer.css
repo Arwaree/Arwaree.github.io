@@ -44,18 +44,22 @@
     transition: 0.5s;
 }
 
+.footer .redes a{
+    font-size: 25px;
+}
+
+.footer .redes a:hover{
+    font-size: 25px;
+    font-size: 28px;
+}
+
 .footer ul{
     list-style-type: none;
 }
 
 .footer a:hover{
     color: #0466c8;
-    font-size: 25px;
-}
-
-.footer a i:hover{
-    color: #0466c8;
-    transform: scale(1.2);
+    font-size: 18px;
 }
 
 .footer li{
