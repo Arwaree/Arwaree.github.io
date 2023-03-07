@@ -2,7 +2,7 @@ let seccion = document.querySelectorAll('.servicios')
 let seccion_rev = document.querySelectorAll('.servicios-revers')
 let titulo = document.querySelectorAll('.ses')
 let titulo_rev = document.querySelectorAll('.ses-rev')
-let img = document.querySelectorAll('.serv-img')
+let img = document.querySelectorAll('.cont-img-serv')
 let img_rev = document.querySelectorAll('.serv-img-rev')
 
 for (let i = 0; i < seccion.length; i++) {

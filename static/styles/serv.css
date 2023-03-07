@@ -18,15 +18,15 @@
 }
 
 .cont-img-serv{
-    background-color: #2f2f2f;
-    padding: 10px;
+    background-color: #9f9f9f;
+    width: 55%;
 }
 
-.serv-img.open{
-    width: 250px;
+.cont-img-serv.open{
+    width: 55%;
 }
 .serv-img{
-    width: 90px;
+    width: 100%;
     transition: .3s all;
 }
 /* para la imagen de reversa */
