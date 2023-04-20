@@ -23,7 +23,7 @@
     <header class="header" id="inicio">
         <nav class="contenedor-header">
             <div class="cont-img-titulo">
-                <!-- <img src="{% static 'imgs/d2210123.png' %}" alt="logo" class="logo-img"> -->
+                <img src="static/imgs/logosas.png" alt="logo" class="logo-img">
                 <h1>ARWARE</h1>
             </div>
             <!-- links con palabras -->
@@ -53,24 +53,16 @@
 
     <!-- hero -->
     <section class="hero" id="hero">
+        <div class="hero-img">
+            <img src="static/imgs/programacion-3.webp" alt="imagen Hero">
+        </div>
         <div class="contenedor-hero">
             <div>
                 <h1>Tu Mejor Solución, Siempre</h1>
                 <h2>Mas que un grupo desarrolladores, somos la conexión con el mundo digital</h2>
                 <span class="comunicate">Realiza lo que imaginas, solo contactándonos:</span>
-                <a class="boton-Pro"
-                        href="#contacto">Enviar Propuesta</a>
+                <a class="boton-Pro" href="#contacto">Enviar Propuesta</a>
             </div>
-            <div>
-                <img src="static/imgs/hero-img.png" alt="imagen Hero">
-            </div>
-        </div>
-        <div class="benef">
-            <ul>
-                <li><i class="ri-database-fill"></i>Gestión de datos</li>
-                <li><i class="ri-user-2-fill"></i>Presencia</li>
-                <li><i class="ri-eye-fill"></i>Visibilidad</li>
-            </ul>
         </div>
     </section>
     <!--end hero -->
@@ -79,35 +71,108 @@
     <main>
 
         <!-- Nuestros Servicios -->
+
         <section class="cont-serv-padre" id="servicios">
             <div>
                 <div>
                     <h1 class="titulo-serv">NUESTROS SERVICIOS</h1>
                 </div>
                 <div class="contenedor-servicios">
-                    <!-- aplicaciones Móviles -->
-                    <article class="servicios open" id="serv">
-                        <div class="cont-img-serv open">
-                            <!-- <img src="static/imgs/app.png" alt="" class="serv-img open" id="img"> -->
-                            <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="miVideo" src="static/imgs/app0001-0116.mp4" class="serv-img"  ></video>  
+                    <div style="width: 20%;" >
+                        <ul class="selectores" style="width: 100%;">
+                            <li><a href="#tab1" class="a" id="item">Aplicaciones Móviles</a></li>
+                            <li><a href="#tab2" class="a" id="item">Paginas Web</a></li>
+                            <li><a href="#tab3" class="a" id="item">Aplicaciones Web</a></li>
+                        </ul>
+                    </div>
+                    <div class="items">
+
+                        <article class="" id="tab1">
+                            <div class="">
+                                <h1 class="" id="titulo">Aplicaciones Móviles</h1>
+                                <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline
+                                    oncontextmenu="return false;" preload="auto" id="miVideo"
+                                    src="static/animaciones/app/0000-0116.mp4" class="serv-img"></video>
+                                <p>Una aplicación Movil es un software diseñado para ejecutarse en los smartphones
+                                    (teléfonos inteligentes), tabletas y otros dispositivos móviles.
+                                    Estas dependen bastante del rubro o negocio por ejemplo para los hoteles lo
+                                    recomendable
+                                    es una aplicación de reservas</p>
+                            </div>
+                        </article>
+
+                        <article class="" id="tab2">
+                            <div class="">
+                                <h1 class="" id="titulo">Paginas Web</h1>
+                                <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline
+                                    oncontextmenu="return false;" preload="auto" id="miVideo"
+                                    src="static/animaciones/paginaweb0000-0128.mp4" class="serv-img"></video>
+                                <p>Existen dos tipos de Paginas Webs Estáticas y Dinámicas, estas Páginas le podrían
+                                    llegar
+                                    a ser util en su Local para poder ganar posicionamiento en internet.
+                                    las principales diferencias son que en las páginas web estáticas no se utilizan
+                                    bases de
+                                    datos ni se requiere programación. Este tipo de webs son mas económicas ya que el
+                                    tiempo
+                                    de programación es mucho menor
+                                    que en las paginas dinámicas. Las webs dinámicas son paginas en las que su contenido
+                                    es
+                                    fácilmente y frecuentemente modificado.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="" id="tab3">
+                            <div class="">
+                                <h1 class="" id="titulo">Aplicaciones Web</h1>
+                                <img src="static/imgs/programacion.png" alt="" class="serv-img open" id="img">
+                                <p>Los sistema son herramientas que creamos
+                                    para que le pueda ser de utilidad en su local.
+                                    Algunos de esos sistemas son Stock, Venta, Control de cámaras y Control de fugas.
+                                    Estos Sistemas le podrían llegar a ser util en su Local (Dependiendo del rubro en el
+                                    que
+                                    se desempeña),
+                                    por ejemplo Un Sistema de Control de Stock o de Venta
+                                    esto lo ayudara a que usted pueda tener un control mucho mas preciso
+                                    a la hora de saber cuantos productos tiene en stock
+                                    y cuantos productos se vendieron en el dia, la semana, o el mes.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="cont-serv-padre" id="servicios">
+            <div>
+                <div>
+                    <h1 class="titulo-serv">NUESTROS SERVICIOS</h1>
+                </div>
+                <div class="contenedor-servicios">
+                    <article class="servicios" id="serv">
+                        <div class="cont-img-serv">
+                            <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline
+                                oncontextmenu="return false;" preload="auto" id="miVideo"
+                                src="static/animaciones/app/0000-0116.mp4" class="serv-img"></video>
                         </div>
                         <div class="cont-text-serv">
-                            <h1 class="ses open" id="titulo">Aplicaciones Móviles</h1>
+                            <h1 class="ses" id="titulo">Aplicaciones Móviles</h1>
                             <p>Una aplicación Movil es un software diseñado para ejecutarse en los smartphones
                                 (teléfonos inteligentes), tabletas y otros dispositivos móviles.
                                 Estas dependen bastante del rubro o negocio por ejemplo para los hoteles lo recomendable
                                 es una aplicación de reservas</p>
                         </div>
                     </article>
-                    <!-- aplicaciones Móviles -->
 
-                    <!-- Paginas web -->
-                    <article class="servicios-revers open" id="serv">
+                    <article class="servicios-revers" id="serv">
                         <div class="cont-img-serv">
-                            <img src="static/imgs/paginaweb.png" alt="" class="serv-img-rev open" id="img">
+                            <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline
+                                oncontextmenu="return false;" preload="auto" id="miVideo"
+                                src="static/animaciones/paginaweb0000-0128.mp4" class="serv-img"></video>
                         </div>
                         <div class="cont-text-serv">
-                            <h1 class="ses-rev open" id="titulo">Paginas Web</h1>
+                            <h1 class="ses" id="titulo">Paginas Web</h1>
                             <p>Existen dos tipos de Paginas Webs Estáticas y Dinámicas, estas Páginas le podrían llegar
                                 a ser util en su Local para poder ganar posicionamiento en internet.
                                 las principales diferencias son que en las páginas web estáticas no se utilizan bases de
@@ -118,15 +183,13 @@
                             </p>
                         </div>
                     </article>
-                    <!-- Paginas web -->
 
-                    <!-- Aplicaciones Web -->
-                    <article class="servicios open" id="serv">
+                    <article class="servicios" id="serv">
                         <div class="cont-img-serv">
-                            <img src="static/imgs/aplicaciones-web.png" alt="" class="serv-img open" id="img">
+                            <img src="static/imgs/aplicacionesweb.png" alt="" class="serv-img open" id="img">
                         </div>
                         <div class="cont-text-serv">
-                            <h1 class="ses open" id="titulo">Aplicaciones Web</h1>
+                            <h1 class="ses" id="titulo">Aplicaciones Web</h1>
                             <p>Los sistema son herramientas que creamos
                                 para que le pueda ser de utilidad en su local.
                                 Algunos de esos sistemas son Stock, Venta, Control de cámaras y Control de fugas.
@@ -139,11 +202,10 @@
                             </p>
                         </div>
                     </article>
-                    <!-- Aplicaciones Web -->
 
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Nuestros Servicios -->
 
         <!-- Digitalizar tu Negocio -->
@@ -188,8 +250,8 @@
                                     class="ri-instagram-line"></i></a></li>
                         <li class="github"><a href="https://github.com/Esteban-45" target="_blank"><i
                                     class="ri-github-fill"></i></a></li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/esteban-salinas-258b09221/" target="_blank"><i
-                                    class="ri-linkedin-fill"></i></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/esteban-salinas-258b09221/"
+                                target="_blank"><i class="ri-linkedin-fill"></i></a></li>
                     </ul>
                     <p id="carta">Sostiene que si te lo propones lo podes lograr.</p>
                 </div>
@@ -203,12 +265,13 @@
                     <ul id="carta">
                         <li class="instagram"><a href="https://www.instagram.com/schneider_ag3/" target="_blank"><i
                                     class="ri-instagram-line"></i></a></li>
-                        <li class="github"><a href="https://github.com/Oscar2sas" target="_blank"><i class="ri-github-fill"></i></a>
+                        <li class="github"><a href="https://github.com/Oscar2sas" target="_blank"><i
+                                    class="ri-github-fill"></i></a>
                         </li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/schneider-oscar-a0a9bb267/" target="_blank"><i
-                                    class="ri-linkedin-fill"></i></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/schneider-oscar-a0a9bb267/"
+                                target="_blank"><i class="ri-linkedin-fill"></i></a></li>
                     </ul>
-                    <p id="carta">ses</p>
+                    <p id="carta">Si se puede imaginar, se puede Programar</p>
                 </div>
                 <!-- segunda carta -->
             </div>
@@ -252,7 +315,7 @@
     <!-- end Main -->
     <div id="go_top_cont" style="transform: scale(0);">
         <i class="ri-arrow-up-s-line"></i>
-      </div>
+    </div>
     <!-- footer -->
     <footer class="footer">
         <!-- Primera sección del footer -->
@@ -305,9 +368,10 @@
         </div>
     </div>
     <!--end footer -->
+    <script src="static/js/jquery-3.6.4.min.js"></script>
     <script src="static/js/nav.js"></script>
-    <script src="static/js/drawer.js"></script>
     <script src="static/js/boton.js"></script>
+    <script src="static/js/drawer.js"></script>
 </body>
 
 </html>

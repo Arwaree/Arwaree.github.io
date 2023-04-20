@@ -1,25 +1,16 @@
-let seccion = document.querySelectorAll('.servicios')
-let seccion_rev = document.querySelectorAll('.servicios-revers')
-let titulo = document.querySelectorAll('.ses')
-let titulo_rev = document.querySelectorAll('.ses-rev')
-let img = document.querySelectorAll('.cont-img-serv')
-let img_rev = document.querySelectorAll('.serv-img-rev')
+$( document).ready(function(){
+    $('ul.selectores li a:first').addClass('open');
+    $('.items article').hide();
+    $('.items article:first').show();
 
-for (let i = 0; i < seccion.length; i++) {
-    seccion[i].addEventListener('click',function(){
-        seccion[i].classList.toggle('open');
-        titulo[i].classList.toggle('open');
-        img[i].classList.toggle('open');
+
+    $('ul.selectores li a').click(function(){
+        $('ul.selectores a').removeClass('open');
+        $(this).addClass('open');
+        $('.items article').hide();
+
+        var activeTab = $(this).attr('href');
+        $(activeTab).show();
+        return false;
     })
-
-}
-
-for (let i = 0; i < seccion_rev.length; i++) {
-    
-    seccion_rev[i].addEventListener('click',function(){
-        seccion_rev[i].classList.toggle('open');
-        titulo_rev[i].classList.toggle('open');
-        img_rev[i].classList.toggle('open');
-    })
-
-}
+});

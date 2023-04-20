@@ -1,31 +1,42 @@
 /* estilos del hero */
 
 .hero {
-    background-color: #3472df;
+    width: 100%;
+    background-image: linear-gradient(to right,#000000,#000000ef);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     transition: .3s all;
-    padding-top: 70px;
+    height: 650px;
 }
+
+.hero-img{
+    width: 100%;
+    opacity: 0.2;
+    height: 650px;
+}
+.hero-img img{
+    width: 100%;
+    height: 650px;
+}
+
 
 .contenedor-hero {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
 }
 
-.contenedor-hero img {
-    width: 500px;
-    padding: 10px;
+.contenedor-hero div{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 100px;
 }
 
 .contenedor-hero h1 {
     font-size: 30px;
-    color: #12468c;
+    color: #3472df;
 }
 
 .contenedor-hero h2 {
@@ -33,34 +44,10 @@
     color: #ffe;
 }
 
-.benef {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #12468c;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.benef ul {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-}
-
-.benef li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #0c2a51;
-}
 
 .comunicate {
     margin-top: 15px;
+    color: #ffe;
 }
 
 a.boton-Pro {

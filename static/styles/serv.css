@@ -1,10 +1,15 @@
 /* estilos de los Servicios */
+.items{
+    display: flex;
+    width: 80%;
+}
+
 .cont-serv-padre{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 20px 0;
+    padding: 20px 0px;
 }
 .titulo-serv{
     font-size: 40px;
@@ -12,30 +17,78 @@
 }
 .contenedor-servicios{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+}
+
+.selectores{
+    width: 20%;
+    box-shadow: 0 0 15px -1px rgba(0,0,0,0.4);
+}
+
+.selectores a{
+    display: flex;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-bottom: solid 1px rgb(194, 194, 194);
+    color: black;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+    justify-content: right;
+}
+
+.selectores a.open{
+    color: rgb(255, 255, 255);
+}
+
+.selectores a::after{
+    content: '';
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    width: 5px;
+    background-color: #3472df;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+
+
+.selectores a.open::after{
+    content: '';
+    display: flex;
+    text-decoration: none;
+    height: 100%;
+    width: 110%;
+    background-color: #3472df;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.selectores a:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+.cont-img-serv{
+    display: flex;
+    background-color: #ffffff;
+    width: 25%;
     justify-content: center;
     align-items: center;
 }
 
-.cont-img-serv{
-    background-color: #9f9f9f;
-    width: 55%;
-}
-
-.cont-img-serv.open{
-    width: 55%;
-}
 .serv-img{
     width: 100%;
-    transition: .3s all;
 }
 /* para la imagen de reversa */
-.serv-img-rev.open{
-    width: 250px;
-}
 .serv-img-rev{
-    width: 90px;
-    transition: .3s all;
+    width: 100%;
 }
 /* para la imagen de reversa */
 .cont-text-serv{
@@ -43,6 +96,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    width: 75%;
 }
 
 .cont-text-serv p{
@@ -53,17 +107,6 @@
 }
 
 h1.ses{
-    display: flex;
-    font-size: 30px;
-    position: relative;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 35px;
-    transition: .3s all;
-    margin-top: 20px;
-}
-
-h1.ses.open{
     display: flex;
     font-size: 30px;
     position: relative;
@@ -86,18 +129,6 @@ h1.ses::before{
 h1.ses::after{
     content: '';
     position: absolute;
-    width: 90%;
-    height: 4px;
-    background-color: #3472df;
-    z-index: 0;
-    bottom: 0;
-    border-radius: 30px;
-    transition: .3s all;
-}
-
-h1.ses.open::after{
-    content: '';
-    position: absolute;
     width: 10%;
     height: 4px;
     background-color: #3472df;
@@ -107,18 +138,8 @@ h1.ses.open::after{
 }
 
 /* titulo en reversa  */
-h1.ses-rev{
-    display: flex;
-    font-size: 30px;
-    position: relative;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 35px;
-    transition: .3s all;
-    margin-top: 20px;
-}
 
-h1.ses-rev.open{
+h1.ses-rev{
     display: flex;
     font-size: 30px;
     position: relative;
@@ -141,18 +162,6 @@ h1.ses-rev::before{
 h1.ses-rev::after{
     content: '';
     position: absolute;
-    width: 90%;
-    height: 4px;
-    background-color: #3472df;
-    z-index: 0;
-    bottom: 0;
-    border-radius: 30px;
-    transition: .3s all;
-}
-
-h1.ses-rev.open::after{
-    content: '';
-    position: absolute;
     width: 10%;
     height: 4px;
     background-color: #3472df;
@@ -167,61 +176,34 @@ h1.ses-rev.open::after{
     display: flex;
     flex-direction: row;
     width: 90%;
-    height: 100px;
+    height: 273px ;
     overflow: hidden;
     justify-content: center;
     background-color: #fff;
     transition: .3s all;
-    cursor: pointer;
     margin-top: 30px;
     box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
+    justify-content: center;
+    align-items: center;
 }
 
 .servicios-revers{
     display: flex;
     flex-direction: row-reverse;
     width: 90%;
-    height: 100px;
+    height: 273px ;
     overflow: hidden;
     justify-content: center;
     background-color: #fff;
     transition: .3s all;
-    cursor: pointer;
     margin-top: 30px;
     box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
-}
-
-.servicios-revers.open{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 90%;
-    height: 273px ;
     justify-content: center;
-    background-color: #fff;
-    transition: .3s all;
-}
-.servicios.open{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 273px ;
-    justify-content: center;
-    background-color: #fff;
-    transition: .3s all;
+    align-items: center;
 }
 
 @media screen and (max-width: 980px){
     .servicios{
-        flex-direction: column;
-        height: max-content
-    }
-
-    .servicios.open{
-        flex-direction: column;
-        height: max-content
-    }
-
-    .servicios-revers{
         flex-direction: column;
         height: max-content
     }

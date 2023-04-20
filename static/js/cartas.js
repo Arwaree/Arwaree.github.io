@@ -1,19 +1,35 @@
-var carta = document.querySelector('.contenedor-carta');
+var imga = document.getElementById('imga');
 
-var accion = document.querySelector('.accionar');
+var number = document.getElementById('ses');
 
-carta.addEventListener('click',function(){
-    var cosasCartas = document.querySelectorAll('[id=carta]')
+$('#ses').on('input change',function(){
+    var shis = $(this).val();
 
-    for (let index = 0; index < cosasCartas.length; index++) {
-        cosasCartas[index].classList.toggle('mostrar');
-        
+    if(shis >= 100){
+        imga.src = 'static/animaciones/app/0' + shis + '.png';
+    }
+    else if (shis > 9 && shis <= 99){
+        imga.src = 'static/animaciones/app/00' + shis + '.png';
+    }
+    else{
+        imga.src = 'static/animaciones/app/000' + shis + '.png';
     }
     
+    console.log(shis);
 })
 
-accion.addEventListener('click',function(){
-    carta = document.querySelector('.contenedor-carta')
-    carta.classList.toggle('mover');
+function siguiente(numero) {
+    console.log(imga.src);
+    if(numero >= 100){
+        imga.src = 'static/animaciones/app/0' + numero + '.png';
+    }
+    else if (numero > 9 && numero <= 99){
+        imga.src = 'static/animaciones/app/00' + numero + '.png';
+    }
+    else{
+        imga.src = 'static/animaciones/app/000' + numero + '.png';
+    }
+    numero++;
 
-})
+}
+
